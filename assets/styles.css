@@ -2,10 +2,19 @@ body, div {
 	font-family: 'Poppins', sans-serif;
 	color: #000;
 	margin: 0;
+	
 }
 
 h1, h2, h3, h4, h5 {
 	font-weight: bold;
+}
+
+.gabe-bg-color{
+	background-color: #ffa319;
+}
+
+.gabe-orange-color{
+	color:  #ffa319;
 }
 
 .header1 {
@@ -34,14 +43,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .orange-text {
-	color: orange;
+	color: #ffa319;
 }
 
 .header-btn {
 	text-decoration: none;
 	color: white;
   padding: 8px 15px; 
-  background-color: orange;
+  background-color: #ffa319;
   border-radius: 25px; 
   border: none;
   cursor: pointer;
@@ -66,4 +75,11 @@ h1, h2, h3, h4, h5 {
 	gap:10px;
 	align-items:center;
 	color:white;
+}
+
+.sosmed-ic-container{
+
+	display:flex;
+	flex-direction:row;
+	gap:20px;
 }

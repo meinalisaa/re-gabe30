@@ -9,6 +9,23 @@ h1, h2, h3, h4, h5 {
 	font-weight: bold;
 }
 
+.section-title {
+  display: inline;  
+  position: relative;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  width: 110%;
+  height: 15px;
+  transform: skew(-12deg) translateX(-50%);
+  background: rgba(255,165,0,1.0);
+  z-index: -1;
+}
+
 .gabe-bg-color{
 	background-color: #ffa319;
 }

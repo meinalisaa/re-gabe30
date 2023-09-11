@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="/assets/styles.css">
 </head>
 
 <body> 
@@ -333,8 +334,9 @@
     <h1 style="padding: 50px">Kontak</h1>
 
     <div class="row mb-5">
+      
       <div class="col-sm-4" style="padding: 0 5%;">
-        <div class="bg-success full-x-y" style="padding: 5%;">
+        <div class="bg-success full-x-y " style="padding: 5%; border-radius: 10px;">
           <span>
             <i class="fa-solid fa-location-dot p-2 mb-3 rounded-circle bg-warning text-success" 
             style="font-size: 40px; width: 60px; height: 60px;"></i>
@@ -346,7 +348,7 @@
       </div>
 
       <div class="col-sm-4" style="padding: 0 5%;">
-        <div class="bg-success full-x-y" style="padding: 5%;">
+        <div class="bg-success full-x-y center-y" style="padding: 5%; border-radius: 10px; ">
           <span>
             <i class="fab fa-whatsapp p-2 mb-3 rounded-circle bg-warning text-success" 
             style="font-size: 40px; width: 60px; height: 60px;"></i>
@@ -358,7 +360,7 @@
       </div>
 
       <div class="col-sm-4" style="padding: 0 5%;">
-        <div class="bg-success full-x-y" style="padding: 5%;">
+        <div class="bg-success full-x-y center-y" style="padding: 5%; border-radius: 10px;">
           <span>
             <i class="fa-regular fa-envelope p-2 mb-3 rounded-circle bg-warning text-success" 
             style="font-size: 40px; width: 60px; height: 60px;"></i>
@@ -446,34 +448,37 @@
           <!-- Links -->
           <h5 class="mb-4">Hubungi Kami</h5>
 
-          <div class="row">
-            <div class="col-sm-auto"> 
-              <i class="fab fa-whatsapp p-2 mb-3 me-2 rounded-circle bg-warning text-black text-center" 
-              style="font-size: 30px; width: 50px; height: 50px;"></i>
-            </div>
-            <div class="col-sm text-white mt-3">
+          <div class="contact-container">
+
+            <div class="contact-row-container">
+              <img class="footer-ic" src="./assets/images/wa-icon.png"/>
+  
               +62 812-4987-8001
             </div>
+  
+            <div class="contact-row-container">
+              <img class="footer-ic" src="./assets/images/email-icon.png"/>
+  
+              gabetigapuluh@gmail.com
+            </div>
+  
+            <div class="contact-row-container" style="align-items: flex-start;">
+
+              <img src="./assets/images/location-icon.png" class="footer-ic">
+  
+              <p>
+                
+                Jl. Raya Merek-Sidikalang, Situnggaling, Kec. Merek, Kabupaten Karo, Sumatera Utara 22173, Indonesia
+              
+              
+              </p>
+  
+            </div>
+
           </div>
 
-          <p>
-            <i class="fab fa-whatsapp p-2 mb-3 me-2 rounded-circle bg-warning text-black text-center" 
-            style="font-size: 30px; width: 50px; height: 50px;"></i>
-            +62 812-4987-8001
-          </p>
+          
 
-          <p>
-            <i class="fab fa-whatsapp p-2 mb-3 me-2 rounded-circle bg-warning text-black text-center" 
-            style="font-size: 30px; width: 50px; height: 50px;"></i>
-            gabetigapuluh@gmail.com
-          </p>
-
-          <p>
-              <i class="fab fa-whatsapp p-2 mb-3 me-2 rounded-circle bg-warning text-black text-center" 
-              style="font-size: 30px; width: 50px; height: 50px;"></i>
-              <span>Jl. Raya Merek-Sidikalang, Situnggaling, Kec. Merek, Kabupaten Karo, Sumatera Utara 22173, Indonesia
-              </span>
-          </p>
         </div>
         <!-- Grid column -->
       </div>
@@ -481,7 +486,7 @@
     </div>
 
   <!-- Copyright -->
-  <div
+  <!-- <div
        class="text-center p-3"
        style="background-color: rgba(0, 0, 0, 0.2)"
        >
@@ -489,17 +494,13 @@
     <a class="text-white" href="https://mdbootstrap.com/"
        >MDBootstrap.com</a
       >
-  </div>
+  </div> -->
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
 
 
-	<div class="flex flex-row justify-evenly ">
-		<div class="bg-green-200 p-10 rounded-3xl">fist item</div>
-		<div class="bg-red-200 p-10 rounded-3xl">second item</div>
-		<div class="bg-yellow-200 p-10 rounded-3xl">third item</div>
-	</div>
+	
 
 
 	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
@@ -586,6 +587,13 @@ a {
 
 .header-btn:hover {
   opacity: 90%;
+}
+
+.center-y{
+	display:flex; 
+	flex-direction: column; 
+	justify-content: center;
+
 }
 
 </style>

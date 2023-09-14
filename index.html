@@ -5,86 +5,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gabe Tiga Puluh</title>
+
   <link rel="icon" href="assets/images/logo-gabe-2.png" type="image/png">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 
   <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body> 
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm" style="background: #FFF; padding: 30px 0;">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm py-4" style="background: #FFF;">
     <div class="container">
-        <a class="navbar-brand" href="#home-section"><img src="assets/images/logo-gabe-1.png" alt="Gabe Tiga Puluh"></a>
+        <a class="navbar-brand" href="#home-section">
+          <img src="assets/images/logo-gabe-1.png" alt="Gabe Tiga Puluh" style="max-width: 25vw;">
+        </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#home-section">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#about-section">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#layanan-section">Layanan</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#produk-section">Produk</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#galeri-section">Galeri</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#partner-section">Partner</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#kontak-section">Kontak</a>
-                </li>
-            </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home-section">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#about-section">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#layanan-section">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#produk-section">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#galeri-section">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#partner-section">Partner</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#kontak-section">Kontak</a>
+            </li>
+          </ul>
         </div>
-
     </div>
-  </nav>  
+  </nav> <!-- navigation bar fixxx -->
 
 
-  <!-- Jumbotron-->
-  <div id="home-section" class="jumbotron bg-img text-white bg-overlay text-center">
-    <h1 style="margin-top: 150px;">
+  <div id="home-section" class="header jumbotron text-white jumbotron-image text-center px-3">
+    <h1 class="overlay-text" style="padding-top: 250px;">
         Kami berfokus untuk <span class="gabe-orange-color">mengembangkan</span> 
         sektor agrikultur <span class="gabe-orange-color">di Sumatera Utara </span>
         melalui teknologi pertanian yang <span class="gabe-orange-color">berkelanjutan</span>
     </h1>
-
-    <p class="my-4">
+    
+    <p class="overlay-text mt-3 mb-5">
         PT. Gabe Tiga Puluh merupakan perusahaan end to end dibidang pertanian sayur maupun buah dataran tinggi sekaligus pendistribusian
     </p>
-    <br>
-    <button class="header-btn gabe-bg-color" href="#produk-section">Get Started</button>
-  </div>
-  <!-- /Jumbotron -->
 
-<!--   <div id="home-section" class="header1 jumbotron text-white jumbotron-image text-center">
-    <h1 class="overlay-text mb-4">
-        Kami berfokus untuk <span class="gabe-orange-color">mengembangkan</span> 
-        sektor agrikultur <span class="gabe-orange-color">di Sumatera Utara </span>
-        melalui teknologi pertanian yang <span class="gabe-orange-color">berkelanjutan</span>
-    </h1>
-
-    <p class="overlay-text mb-4">
-        PT. Gabe Tiga Puluh merupakan perusahaan end to end dibidang pertanian sayur maupun buah dataran tinggi sekaligus pendistribusian
-    </p>
-    <br>
-    <a class="header-btn overlay-text gabe-bg-color" href="#produk-section">Get Started</a>
-  </div> --> <!-- header -->
+    <button class="btn btn-primary rounded-pill gabe-bg-color" 
+            style="border: none; width: 120px; z-index: 10; position: relative;">
+      Get Started
+    </button>
+    <!-- <a class="rounded-pill overlay-text header-btn gabe-bg-color" href="#produk-section">Get Started</a> -->
+  </div> <!-- header -->
 
 
   <div class="container about text-center my-5" id="about-section">
@@ -152,7 +142,7 @@
     <div class="ratio ratio-16x9">
       <iframe title="YouTube video" allowfullscreen src="https://www.youtube.com/embed/uqQIO7NE_dE"></iframe>
     </div>
-  </div> <!-- about -->
+  </div> <!-- about-section -->
 
 
   <div class="layanan bg-success" id="layanan-section" style="padding: 30px; margin-top: 150px;">
@@ -161,12 +151,12 @@
 
       <div class="row mt-5">
 
-        <div class="col-sm-7">
+        <div class="col-sm-7 mb-4">
           <img src="assets/images/keunggulan.jpg" style="width: 100%; border-radius: 20px;">
         </div>
 
 
-        <div class="col-sm-5" style="margin: auto 0;">
+        <div class="jenis-layanan col-sm-5" style="margin: auto 0;">
 
           <div class="row mb-4">
             <div class="col-md-auto">
@@ -221,7 +211,7 @@
       </div>
 
     </div> <!-- container -->
-  </div> <!-- layanan -->
+  </div> <!-- layanan-section -->
 
 
   <div class="container produk" id="produk-section">
@@ -232,7 +222,7 @@
 
     <div class="row mb-5">
 
-      <div class="col-4">
+      <div class="col-md-4">
         <div class="card mb-5 shadow-sm" style="width: 80%; margin: auto;">
           <img class="card-img-top" src="assets/images/kentang.jpg" alt="Kentang">
           <div class="card-body">
@@ -242,7 +232,7 @@
         </div>
       </div>
 
-      <div class="col-4">
+      <div class="col-md-4">
         <div class="card mb-5 shadow-sm" style="width: 80%; margin: auto;">
           <img class="card-img-top" src="assets/images/wortel.jpg" alt="Wortel">
           <div class="card-body">
@@ -252,7 +242,7 @@
         </div>
       </div>
 
-      <div class="col-4">
+      <div class="col-md-4">
         <div class="card mb-5 shadow-sm" style="width: 80%; margin: auto;">
           <img class="card-img-top" src="assets/images/kubis.jpg" alt="Kubis">
           <div class="card-body">
@@ -262,7 +252,7 @@
         </div>
       </div>
 
-      <div class="col-4">
+      <div class="col-md-4">
         <div class="card mb-5 shadow-sm" style="width: 80%; margin: auto;">
           <img class="card-img-top" src="assets/images/jeruk.jpg" alt="Jeruk">
           <div class="card-body">
@@ -272,7 +262,7 @@
         </div>
       </div>
 
-      <div class="col-4">
+      <div class="col-md-4">
         <div class="card mb-5 shadow-sm" style="width: 80%; margin: auto;">
           <img class="card-img-top" src="assets/images/jahe.jpg" alt="Jahe">
           <div class="card-body">
@@ -283,7 +273,7 @@
       </div>
 
     </div>
-  </div> <!-- produk -->
+  </div> <!-- produk-section -->
 
 
   <div class="container galeri" id="galeri-section">
@@ -293,35 +283,35 @@
     </div>
 
     <div class="row">
-      <div class="col-8 mb-4">
+      <div class="col-md-8 mb-4">
         <img src="assets/images/galeri-1.jpg" alt="Galeri 1" class="full-x-y">
       </div>
-      <div class="col-4 mb-4">
+      <div class="col-md-4 mb-4">
         <img src="assets/images/galeri-2.jpg" alt="Galeri 2" class="full-x-y">
       </div>
     </div>
 
     <div class="row">
-      <div class="col-4 mb-4">
+      <div class="col-md-4 mb-4">
         <img src="assets/images/galeri-3.jpg" alt="Galeri 3" class="full-x-y">
       </div>
-      <div class="col-4 mb-4">
+      <div class="col-md-4 mb-4">
         <img src="assets/images/galeri-4.jpg" alt="Galeri 4" class="full-x-y">
       </div>
-      <div class="col-4 mb-4">
+      <div class="col-md-4 mb-4">
         <img src="assets/images/galeri-5.jpg" alt="Galeri 5" class="full-x-y">
       </div>
     </div>
 
     <div class="row">
-      <div class="col-6 mb-4">
+      <div class="col-md-6 mb-4">
         <img src="assets/images/galeri-6.jpg" alt="Galeri 6" class="full-x-y">
       </div>
-      <div class="col-6 mb-4">
+      <div class="col-md-6 mb-4">
         <img src="assets/images/galeri-7.jpg" alt="Galeri 7" class="full-x-y">
       </div>
     </div>
-  </div> <!-- galeri -->
+  </div> <!-- galeri-section -->
 
 
   <div class="container partner" id="partner-section">
@@ -330,33 +320,33 @@
       <h1 class="section-title text-success">Partner</h1>
     </div>
 
-    <div class="row mb-3">
-      <div class="col-6">
+    <div class="row">
+      <div class="col-md-6 mb-3">
         <img class="full-x-y" src="assets/images/partner1.jpg" alt="Partner 1">
       </div>
-      <div class="col-6">
+      <div class="col-md-6 mb-3">
         <img class="full-x-y" src="assets/images/partner2.jpg" alt="Partner 2">
       </div>
     </div>
 
-    <div class="row mb-3">
-      <div class="col-6">
+    <div class="row">
+      <div class="col-md-6 mb-3">
         <img class="full-x-y" src="assets/images/partner3.jpg" alt="Partner 3">
       </div>
-      <div class="col-6">
+      <div class="col-md-6 mb-3">
         <img class="full-x-y" src="assets/images/partner4.jpg" alt="Partner 4">
       </div>
     </div>
 
-    <div class="row mb-3 text-center">
-      <div class="col-6 mb-4">
+    <div class="row text-center">
+      <div class="col-md-6 mb-3">
         <img src="assets/images/telkom.png" alt="Telkom" style="width: 50%;">
       </div>
-      <div class="col-6 mb-4">
+      <div class="col-md-6 mb-3">
         <img src="assets/images/banksumut.png" alt="Bank Sumut" style="width: 50%; margin-top: 40px;">
       </div>
     </div>
-  </div> <!-- partner -->
+  </div> <!-- partner-section -->
 
 
   <div class="container kontak text-center" id="kontak-section">
@@ -404,13 +394,11 @@
       </div>
 
     </div>
-  </div> <!-- kontak -->
+  </div> <!-- kontak-section -->
 
 
-
-<!-- Footer -->
-<footer class="text-white p-2 mt-5 footer" style="background-color: #222;">
- 
+  <footer class="text-white p-2 mt-5 footer" style="background-color: #222;">
+   
     <div class="container text-center text-md-start mt-5">
       <!-- Grid row -->
       <div class="row mt-3">
@@ -434,7 +422,6 @@
             <a href="https://www.instagram.com/gabeholtifarm/">
               <img class="footer-ic"  src="./assets/images/ig-icon.png"/>
             </a>
-
           </div>
         </div>
         <!-- Grid column -->
@@ -487,20 +474,20 @@
               </a>
               +62 812-4987-8001
             </div>
-  
+
             <div class="contact-row-container">
               <img class="footer-ic" src="./assets/images/email-icon.png"/>
               gabetigapuluh@gmail.com
             </div>
-  
+
             <div class="contact-row-container" style="align-items: flex-start;">
 
               <img src="./assets/images/location-icon.png" class="footer-ic">
-  
+
               <p class="text-container-right-align"> 
                 Jl. Raya Merek-Sidikalang, Situnggaling, Kec. Merek, Kabupaten Karo, Sumatera Utara 22173, Indonesia
               </p>
-  
+
             </div>
 
           </div>
@@ -510,23 +497,19 @@
       <!-- Grid row -->
     </div>
 
-  <!-- Copyright -->
-  <div class="text-center p-4 copyright" style="color: white;">
-    Copyright © PT. Gabe Tiga Puluh 2022 Powered by <span style="font-weight: bold; "><a style="color: white;" href="https://rumahdev.id/">RumahDev</a></span> 
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
-
-  
-
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <div class="text-center p-4 copyright" style="color: white;">
+      <span>Copyright © PT. Gabe Tiga Puluh 2022 Powered by </span>
+      <span style="font-weight: bold; "><a style="color: white;" href="https://rumahdev.id/">RumahDev</a></span> 
+    </div>
+  </footer> <!-- footer -->
 
 
-<button class="FaB" onclick="window.location.href = 'https://wa.me/6281249878001';">
-  <img src="assets/images/whatsapp-ic-2.png">
-</button>
-    
+  <button class="FaB" onclick="window.location.href = 'https://wa.me/6281249878001';">
+    <img src="assets/images/whatsapp-ic-2.png">
+  </button> <!-- floating button -->
+
+
+<!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
 </body>
 </html>
